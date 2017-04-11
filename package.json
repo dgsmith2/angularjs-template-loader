@@ -1,0 +1,38 @@
+{
+  "name": "angularjs-template-loader",
+  "version": "0.1.0",
+  "description": "Webpack loader that inlines all html for AngularJS components/directives.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "preversion": "npm test",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags",
+    "release:patch": "npm version patch && git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgsmith2/angularjs-template-loader.git"
+  },
+  "keywords": [
+    "angularjs",
+    "webpack",
+    "loader"
+  ],
+  "author": "Daniel Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgsmith2/angularjs-template-loader/issues"
+  },
+  "homepage": "https://github.com/dgsmith2/angularjs-template-loader#readme",
+  "devDependencies": {
+    "codecov": "^2.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  }
+}

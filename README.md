@@ -1,6 +1,8 @@
 # angularjs-template-loader
 Webpack loader that inlines all html for AngularJS code that specifies a `templateUrl`.  It is a port of code from [angular2-template-loader](https://github.com/TheLarkInn/angular2-template-loader).
 
+[![Build Status](https://travis-ci.org/dgsmith2/angularjs-template-loader.svg?branch=master)](https://travis-ci.org/dgsmith2/angularjs-template-loader)
+
 ### Quick Links
 - [Installation](#installation)
 - [Requirements](#requirements)

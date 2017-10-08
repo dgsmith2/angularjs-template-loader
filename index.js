@@ -8,7 +8,7 @@ const stringRegex = /(['`"])((?:[^\\]\\\1|.)*?)\1/g;
 function replaceStringsWithRequires(string, relativeTo) {
   return string.replace(stringRegex, (match, quote, url) => {
     if (relativeTo) {
-      url = path.join(relativeTo, url);
+      url = path.posix.join(relativeTo, url);
     }
     else if (url.charAt(0) !== ".") {
       url = "./" + url;

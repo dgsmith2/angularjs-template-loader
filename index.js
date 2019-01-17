@@ -1,5 +1,6 @@
 const loaderUtils = require("loader-utils");
 const path = require("path");
+const os = require("os");
 
 // using: regex, capture groups, and capture group variables.
 const templateUrlRegex = /templateUrl\s*:(\s*['"`](.*?)['"`]\s*([,}]))/gm;
@@ -13,6 +14,7 @@ function replaceStringsWithRequires(string, relativeTo) {
     else if (url.charAt(0) !== ".") {
       url = "./" + url;
     }
+    if (os.platform() === "win32") url = url.replace(/\\/g, '\\\\');
     return "require('" + url + "')";
   });
 }

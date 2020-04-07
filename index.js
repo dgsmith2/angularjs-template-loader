@@ -15,7 +15,7 @@ function replaceStringsWithRequires(string, relativeTo) {
       url = "./" + url;
     }
     if (os.platform() === "win32") url = url.replace(/\\/g, '\\\\');
-    return "require('" + url + "')";
+    return "require('" + url + "').default";
   });
 }
 

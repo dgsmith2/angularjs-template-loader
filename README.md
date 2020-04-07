@@ -71,7 +71,7 @@ angular.module("my-module").component("my-component", {
 #### After (before it is bundled into your webpack'd application)
 ```js
 angular.module("my-module").component("my-component", {
-  template: require('/root/some/path/app/src/myComponent.html" ,
+  template: require('/root/some/path/app/src/myComponent.html").default,
   controller: "MyController"
 });
 ```

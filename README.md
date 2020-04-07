@@ -10,9 +10,6 @@ Webpack loader that inlines all html for AngularJS code that specifies a `templa
 - [How does it work](#how-does-it-work)
 - [Common Issues](#common-issues)
 
-### This Fork
-Since we are using raw-loader, it returns an object with the default properties to be compatible with ES6 standard. This tool uses ES5 syntax so we need to access to default value explicitly. Another possible solution is to upgrade raw-loader to 4.0.0 and use `esModules: false` properties but our build tool chain uses a node version not supported by raw-loader 4.x.
-
 ### Installation
 Option 1: Install from [npm](https://www.npmjs.com/package/angularjs-template-loader).
 - `npm install angularjs-template-loader --save-dev`

@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/dgsmith2/angularjs-template-loader#readme",
   "devDependencies": {
-    "codecov": "^2.1.0",
+    "codecov": "^3.8.3",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "should": "^11.2.1"
